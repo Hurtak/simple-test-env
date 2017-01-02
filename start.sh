@@ -2,6 +2,8 @@
 
 TAG="simple-test-env"
 
+mkdir -pv shared
+
 docker build \
     --tag ${TAG} \
     --no-cache \
