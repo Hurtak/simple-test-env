@@ -15,6 +15,6 @@ sudo docker run \
     --interactive \
     --rm \
     --expose 8080 \
-    --workdir "${DIR_CONTAINER}" \
+    --workdir "${DIR_CONTAINER}/${DIR_NAME_SHARED}" \
     --volume "${DIR_HOST}/${DIR_NAME_SHARED}:${DIR_CONTAINER}/${DIR_NAME_SHARED}" \
     "${IMAGE}" ${COMMAND}
