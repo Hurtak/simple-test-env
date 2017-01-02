@@ -1,7 +1,9 @@
 #!/bin/bash
 
+TAG="simple-test-env"
+
 docker build \
-    --tag simple-test-env \
+    --tag ${TAG} \
     --no-cache \
     .
 
@@ -10,6 +12,6 @@ docker run \
     --interactive \
     --rm \
     --volume "$(pwd)/shared:/usr/src/files/shared" \
-    simple-test-env
+    ${TAG}
 
-docker rmi simple-test-env
+docker rmi ${TAG}
