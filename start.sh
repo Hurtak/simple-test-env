@@ -8,7 +8,7 @@ DIR_NAME_SHARED="shared"
 IMAGE="${1:-debian}"
 COMMAND="${2}"
 
-mkdir "${DIR_NAME_SHARED}"
+mkdir -p "${DIR_NAME_SHARED}"
 
 sudo docker run \
     --tty \
