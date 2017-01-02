@@ -1,19 +1,20 @@
 #!/bin/bash
 
-TAG="simple-test-env"
+cd "$(dirname "$0")"
 
-mkdir -pv shared
+DIR_HOST="$(pwd)"
+DIR_CONTAINER="/usr/src"
+DIR_NAME_SHARED="shared"
+IMAGE="${1:-debian}"
+COMMAND="${2}"
 
-docker build \
-    --tag ${TAG} \
-    --no-cache \
-    .
+mkdir -p "${DIR_NAME_SHARED}"
 
-docker run \
+sudo docker run \
     --tty \
     --interactive \
     --rm \
-    --volume "$(pwd)/shared:/usr/src/files/shared" \
-    ${TAG}
-
-docker rmi ${TAG}
+    --expose 8080 \
+    --workdir "${DIR_CONTAINER}" \
+    --volume "${DIR_HOST}/${DIR_NAME_SHARED}:${DIR_CONTAINER}/${DIR_NAME_SHARED}" \
+    "${IMAGE}" ${COMMAND}
