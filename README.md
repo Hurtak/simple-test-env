@@ -26,8 +26,8 @@
 
 - `./start.sh` run default image debian:8
 - `./start.sh ubuntu:16.04` run image with ubuntu:16.04
-- `./start.sh node:6` run image with node:6, images default run command starts node REPL
-- `./start.sh node:6 /bin/bash` run image with node:6 and override run command to /bin/bash
+- `./start.sh python:3` run image with python:3, uses image's default run command which starts python REPL
+- `./start.sh python:3 /bin/bash` run image with python:3 and override run command to /bin/bash
 
 ### Demo
 
