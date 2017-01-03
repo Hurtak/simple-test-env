@@ -11,7 +11,7 @@ COMMAND="${2}"
 
 mkdir -p "${DIR_NAME_SHARED}"
 
-sudo docker run \
+docker run \
     --tty \
     --interactive \
     --rm \
