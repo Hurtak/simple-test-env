@@ -3,6 +3,7 @@
 - super simple shell script which quickly creates an environment with
     - desired os/language
     - shared folder
+    - shared port `8080`
 
 ## Demo
 

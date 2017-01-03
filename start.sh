@@ -5,6 +5,7 @@ cd "$(dirname "$0")"
 DIR_HOST="$(pwd)"
 DIR_CONTAINER="/usr/src"
 DIR_NAME_SHARED="shared"
+
 IMAGE="${1:-debian}"
 COMMAND="${2}"
 
