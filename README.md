@@ -45,11 +45,6 @@ wget https://raw.githubusercontent.com/Hurtak/simple-test-env/master/start.sh
 - workdir inside the image is set to `/usr/src/shared`
 - in this directory, there will be automatically created `shared` directory, which will be mounted to the image's workdir
 
-### Shared port
-
-- port `8080` is exposed to host system
-- run something on port `8080` in container, it will then be avaliable on `localhost:8080` on host system
-
 ### Examples
 
 - `./start.sh` run default image debian:8
@@ -57,3 +52,7 @@ wget https://raw.githubusercontent.com/Hurtak/simple-test-env/master/start.sh
 - `./start.sh python:3` run image with python:3, uses image's default run command which starts python REPL
 - `./start.sh python:3 /bin/bash` run image with python:3 and override run command to /bin/bash
 
+### Shared port
+
+- port `8080` is exposed to host system
+- run something on port `8080` in container, it will then be avaliable on `localhost:8080` on host system
