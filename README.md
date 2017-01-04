@@ -25,9 +25,8 @@
 
 ### Operating system compatibility
 
-- Works on Linux
-- Should work on MacOS (if somebody can confirm/deny, please create issue)
-- Maybe will work on Windows 10 (if somebody can confirm/deny, please create issue)
+- Works on Linux & MacOS
+- Maybe works on Windows 10 (if somebody can confirm/deny, please create issue)
 
 ## Install
 
@@ -55,4 +54,4 @@ wget https://raw.githubusercontent.com/Hurtak/simple-test-env/master/start.sh
 ### Shared port
 
 - port `8080` is exposed to host system
-- run something on port `8080` in container, it will then be avaliable on `localhost:8080` on host system
+- run something on `localhost:8080` in container, it will then be avaliable on `localhost:8080` on host system
