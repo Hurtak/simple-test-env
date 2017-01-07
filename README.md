@@ -4,7 +4,7 @@
     - desired os/language
     - shared folder
     - exposed port `8080` to host system
-    - and it cleans up after itself, when you exit container is deleted, image is kept
+    - and it cleans up after itself, when you exit container is deleted, the image is kept
 
 ## Demo
 
@@ -51,5 +51,5 @@
 
 ### Shared port
 
-- port `8080` is exposed to host system
-- run something on `localhost:8080` in container, it will then be avaliable on `localhost:8080` on host system
+- port `8080` is exposed to the host system
+- run something on `localhost:8080` in the container, it will then be available on `localhost:8080` on the host system
