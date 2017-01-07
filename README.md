@@ -30,17 +30,14 @@
 
 ## Install
 
-```bash
-mkdir simple-test-env
-cd simple-test-env
-wget https://raw.githubusercontent.com/Hurtak/simple-test-env/master/start.sh
-```
+- with git `git clone https://github.com/hurtak/simple-test-env`
+- or just download `start.sh` and make it executable with `chmod u+x start.sh`
 
 ## Usage
 
-- `./start.sh <image> <run command>`
+- `./start.sh <image> <command>`
     - image defaults to `debian`
-    - command defaults to image's default command
+    - command defaults to image's default command (usually `/bin/bash` with operating systems, or REPL with programming languages)
 - workdir inside the image is set to `/usr/src/shared`
 - in this directory, there will be automatically created `shared` directory, which will be mounted to the image's workdir
 
