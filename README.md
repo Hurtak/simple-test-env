@@ -53,3 +53,7 @@
 
 - port `8080` is exposed to the host system
 - run something on `localhost:8080` in the container, it will then be available on `localhost:8080` on the host system
+
+## Caveats
+
+- Files created from inside container into a host mounted directory are owned by root user (related ticket https://github.com/docker/docker/issues/3206)
