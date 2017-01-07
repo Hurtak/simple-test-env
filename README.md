@@ -4,6 +4,7 @@
     - desired os/language
     - shared folder
     - exposed port `8080` to host system
+    - and it cleans up after itself, when you exit container is deleted, image is kept
 
 ## Demo
 
