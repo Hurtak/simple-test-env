@@ -40,7 +40,7 @@
     - image defaults to `debian`
     - command defaults to image's default command (usually `/bin/bash` with operating systems, or REPL with programming languages)
 - workdir inside the image is set to `/usr/src/shared`
-- in this directory, there will be automatically created `shared` directory, which will be mounted to the image's workdir
+- on host system, there will be automatically created `shared` directory next to the `start.sh` script itself, this directory will be mounted to the image's workdir
 
 ### Examples
 
