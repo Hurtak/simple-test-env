@@ -4,7 +4,7 @@
     - desired os/language
     - shared folder
     - exposed port `8080` to host system
-    - and it cleans up after itself, when you exit container is deleted, the image is kept
+    - when you are done, the script will clean up after itself by deleting the container
 
 ## Demo
 
